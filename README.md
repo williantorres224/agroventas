@@ -27,3 +27,6 @@ Antes de ejecutar el proyecto, configura las variables de entorno:
 ```bash
 DB_USER=tu_usuario
 DB_PASS=tu_contraseña
+
+## Autor
+William Torres  
