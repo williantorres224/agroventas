@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class ProductoDAO {
 
-    // 🔹 LISTAR
+    //  LISTAR
     public ArrayList<Producto> listarProductos() throws Exception {
         ArrayList<Producto> lista = new ArrayList<>();
 
@@ -27,7 +27,7 @@ public class ProductoDAO {
         return lista;
     }
 
-    // 🔹 INSERT
+    //  INSERT
     public boolean insertarProducto(Producto p) throws Exception {
         String sql = "INSERT INTO productos (nombre, precio) VALUES (?, ?)";
 
@@ -41,7 +41,7 @@ public class ProductoDAO {
         }
     }
 
-    // 🔹 UPDATE
+    //  UPDATE
     public boolean actualizarProducto(Producto p) throws Exception {
         String sql = "UPDATE productos SET nombre = ?, precio = ? WHERE id = ?";
 
@@ -56,7 +56,7 @@ public class ProductoDAO {
         }
     }
 
-    // 🔹 DELETE
+    //  DELETE
     public boolean eliminarProducto(int id) throws Exception {
         String sql = "DELETE FROM productos WHERE id = ?";
 

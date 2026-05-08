@@ -18,7 +18,7 @@ public class GestionProductosUI extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout(10,10));
 
-        // 🔹 FORMULARIO
+        //  FORMULARIO
         JPanel panel = new JPanel(new GridLayout(2, 2, 5, 5));
         txtNombre = new JTextField();
         txtPrecio = new JTextField();
@@ -30,12 +30,12 @@ public class GestionProductosUI extends JFrame {
 
         add(panel, BorderLayout.NORTH);
 
-        // 🔹 TABLA
+        //  TABLA
         modelo = new DefaultTableModel(new String[]{"ID", "Nombre", "Precio"}, 0);
         tabla = new JTable(modelo);
         add(new JScrollPane(tabla), BorderLayout.CENTER);
 
-        // 🔹 BOTONES
+        //  BOTONES
         JPanel botones = new JPanel();
 
         JButton btnAgregar = new JButton("Agregar");
@@ -61,7 +61,7 @@ public class GestionProductosUI extends JFrame {
         listar();
     }
 
-    // 🔹 LISTAR
+    //  LISTAR
     private void listar() {
         try {
             modelo.setRowCount(0);
@@ -80,7 +80,7 @@ public class GestionProductosUI extends JFrame {
         }
     }
 
-    // 🔹 VALIDAR
+    //  VALIDAR
     private boolean validar() {
         String nombre = txtNombre.getText().trim();
         String precioStr = txtPrecio.getText().trim();
@@ -106,7 +106,7 @@ public class GestionProductosUI extends JFrame {
         return true;
     }
 
-    // 🔹 AGREGAR
+    //  AGREGAR
     private void agregar() {
         try {
             if (!validar()) return;
@@ -125,7 +125,7 @@ public class GestionProductosUI extends JFrame {
         }
     }
 
-    // 🔹 ACTUALIZAR
+    //  ACTUALIZAR
     private void actualizar() {
         try {
             if (idSeleccionado == -1) {
@@ -149,7 +149,7 @@ public class GestionProductosUI extends JFrame {
         }
     }
 
-    // 🔹 ELIMINAR
+    //  ELIMINAR
     private void eliminar() {
         try {
             if (idSeleccionado == -1) {
@@ -177,7 +177,7 @@ public class GestionProductosUI extends JFrame {
         }
     }
 
-    // 🔹 CARGAR SELECCIÓN
+    //  CARGAR SELECCIÓN
     private void cargarSeleccion() {
         int fila = tabla.getSelectedRow();
 
@@ -188,7 +188,7 @@ public class GestionProductosUI extends JFrame {
         }
     }
 
-    // 🔹 LIMPIAR
+    //  LIMPIAR
     private void limpiar() {
         txtNombre.setText("");
         txtPrecio.setText("");

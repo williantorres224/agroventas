@@ -45,7 +45,7 @@ public class LoginUI extends JFrame {
 
             if (u != null) {
 
-                // 🔐 guardar sesión con rol
+                //  guardar sesión con rol
                 Sesion.iniciarSesion(u.getUsername(), u.getRol());
 
                 JOptionPane.showMessageDialog(this,

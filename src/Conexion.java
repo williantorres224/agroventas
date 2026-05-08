@@ -10,6 +10,11 @@ public class Conexion {
     private static final String PASS = System.getenv("DB_PASS");
 
     public static Connection getConexion() throws Exception {
+
+        if (USER == null || PASS == null) {
+            throw new RuntimeException(" Configura las variables de entorno DB_USER y DB_PASS");
+        }
+
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(URL, USER, PASS);
     }

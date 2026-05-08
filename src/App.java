@@ -8,8 +8,8 @@ public class App {
     public static void main(String[] args) {
 
         String url = "jdbc:mysql://localhost:3306/agroventas";
-        String user = "root";
-        String password = "Mysql1234*TORRES";
+        String user = "DB_USER";
+        String password = "DB_PASS";
 
         try {
      

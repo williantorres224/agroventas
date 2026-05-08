@@ -205,7 +205,7 @@ public class RegistroVentasUI extends JFrame {
 
         Producto p = (Producto) comboProductos.getSelectedItem();
 
-        double total = p.getPrecio() * cantidad;
+        double total = p.getPrecio();
         String fecha = txtFecha.getText();
 
         Venta venta = new Venta(dni, edad, p.getId(), cantidad, total, fecha);
