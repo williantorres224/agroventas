@@ -1,18 +1,29 @@
-## Getting Started
+# AgroVentas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sistema de ventas desarrollado en Java utilizando programación orientada a objetos, JDBC y MySQL.
 
-## Folder Structure
+## Características
 
-The workspace contains two folders by default, where:
+- Inicio de sesión
+- Gestión de productos
+- Registro de ventas
+- Conexión a base de datos MySQL
+- Interfaz gráfica con Java Swing
+- Uso de DAO (Data Access Object)
+- Uso de PreparedStatement para mayor seguridad
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Tecnologías utilizadas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Java
+- MySQL
+- JDBC
+- Java Swing
+- Git & GitHub
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Configuración
 
-## Dependency Management
+Antes de ejecutar el proyecto, configura las variables de entorno:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+DB_USER=tu_usuario
+DB_PASS=tu_contraseña
